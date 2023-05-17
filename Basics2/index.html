@@ -6,25 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORM</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="header">
-        <h1>
-            CONTACT FORM
-        </h1>
-    </div>
-    <div class="form">
-        Name <br>
-        <input type="text" name="username" id="name" placeholder="Enter your name">
-    </div>
-        Email <br>
-    <div class="email">
-        <input type="email" name="email" id="mail" placeholder="Enter your email">
-    </div>
-    <div>
-        Message <br>
-        <input type="text" name="message" id="text" placeholder="Enter your Message">
-    </div>
-    <input type="submit" value="SUBMIT">
+    <div id="div1">
+        <div class="header">
+            <h1>
+                CONTACT FORM
+            </h1>
+        </div>
+        <form action="" method="post" class="form">
+            <div class="text">
+                Name <br>
+                <input type="text" name="username" id="name" placeholder="Enter your name">
+            </div>
+                Email <br>
+            <div class="email">
+                <input type="email" name="email" id="mail" placeholder="Enter your email">
+            </div>
+            <div>
+                Message <br>
+                <textarea name="message" id="mess" cols="50" rows="10" placeholder="Type your message"></textarea>
+            </div>
+            <input type="submit" value="SUBMIT" id="submit">
+        </form>
+    </div1>
 </body>
 </html>
