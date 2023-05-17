@@ -33,4 +33,10 @@ body{
     padding: 5px;
     border-radius: 10px;
     border: 2px solid greenyellow;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.email,.text,.sub,.mes{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
