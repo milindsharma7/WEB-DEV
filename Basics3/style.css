@@ -69,12 +69,20 @@ body>.up{
     color: white;
 }
 
-body>.up>h1{
+body>.up>p1{
     font-size: 400%;
+    font-weight: 600;
+}
+
+body>.up>p2{
+    font-size: 400%;
+    color: red;
+    font-weight: 600;
 }
 
 body>.up>h4{
     font-size: 150%;
+    font-weight: 400;
 }
 
 body>.down>a{
