@@ -1,0 +1,32 @@
+*{
+    background-color: lightblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#xCoordinate{
+    border: solid 2px black;
+    padding: 10px;
+    font-size: 5vw;
+    display: inline-block;
+    position: relative;
+    left: 40vw;
+    border-radius: 20px;
+    background-color: lightgray;
+}
+
+#yCoordinate{
+    border: solid 2px black;
+    padding: 10px;
+    margin-left: 50px;
+    display: inline-block;
+    position: relative;
+    left: 45vw;
+    font-size: 5vw;
+    border-radius: 20px;
+    background-color: lightgrey;
+}
+
+.display{
+    position: relative;
+    top: 40vh;
+}
