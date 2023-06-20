@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: solid 2px black; */
+}
+
+body{
+    background-color: bisque;
+}
+
+.container{
+    background-color: white;
+    width: 80%;
+    min-height: 100vh;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+textarea{
+    resize: none;
+}
+input,button,textarea{
+    padding: 10px;
+    border: solid 2px black;
+    outline: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button{
+    cursor: pointer;
+    background-color: navy;
+    color: white;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rgb(3, 3, 246);
+}
+.delete{
+    background-color: red;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-items: left;
+    border: none;
+}
+.delete:hover{
+    background-color: rgb(255, 94, 94);
+}
+.task{
+    display: flex ;
+    background-color: lightgrey;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+#deleteArea{
+    flex: 1 1 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#taskArea{
+    flex: 1 1 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.task div{
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+}
