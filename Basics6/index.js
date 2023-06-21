@@ -3,7 +3,8 @@ const description = document.getElementById("description");
 const form = document.querySelector("form");
 const container = document.querySelector(".container");
 
-const tasks = [];
+const tasks = localStorage.getItem("tasks") ? JSON.parse(localStorage.getItem("tasks")) : [];
+show();
 
 function show(){
     tasks.forEach((value,index)=>{
@@ -33,6 +34,7 @@ function show(){
         btn.addEventListener("click",()=>{
             tasks.splice(index,1);
             remove();
+            localStorage.setItem("tasks",JSON.stringify(tasks));
             show();
         });
         deleteArea.appendChild(btn);
@@ -57,6 +59,7 @@ form.addEventListener("submit",(e)=>{
         title: title.value,
         description: description.value,
     });
+    localStorage.setItem("tasks",JSON.stringify(tasks));
     remove();
     show();
 });
