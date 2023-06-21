@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: solid 2px black;
+    font-size: 1.1rem;
 }
 
 body{
@@ -64,6 +64,15 @@ button:hover{
     margin: auto;
     margin-top: 20px;
     border-radius: 20px;
+}
+#taskTitle{
+    font-size: 2rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#taskDesc{
+    margin-top: 0px;
+    padding-top: 0px;
 }
 #deleteArea{
     flex: 1 1 10%;
