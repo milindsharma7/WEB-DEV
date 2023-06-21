@@ -40,11 +40,19 @@ function show(){
     });
 }
 
+function remove(){
+    const rmv = document.querySelectorAll(".task");
+    rmv.forEach((value)=>{
+        value.remove(); 
+    });
+}
+
 form.addEventListener("submit",(e)=>{
     e.preventDefault();
-     tasks.push({
+    remove();
+    tasks.push({
         title: title.value,
         description: description.value,
-     });
-     show();
+    });
+    show();
 });
