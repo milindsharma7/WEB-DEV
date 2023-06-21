@@ -6,7 +6,7 @@ const container = document.querySelector(".container");
 const tasks = [];
 
 function show(){
-    tasks.forEach((value)=>{
+    tasks.forEach((value,index)=>{
         const div = document.createElement("div");
         div.setAttribute("class","task");
 
@@ -30,7 +30,11 @@ function show(){
 
         const btn = document.createElement("button");
         btn.setAttribute("class","delete");
-
+        btn.addEventListener("click",()=>{
+            tasks.splice(index,1);
+            remove();
+            show();
+        });
         deleteArea.appendChild(btn);
 
         div.append(divTaskItem);
@@ -49,10 +53,10 @@ function remove(){
 
 form.addEventListener("submit",(e)=>{
     e.preventDefault();
-    remove();
     tasks.push({
         title: title.value,
         description: description.value,
     });
+    remove();
     show();
 });
