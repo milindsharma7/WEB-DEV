@@ -6,6 +6,7 @@ const type = document.getElementById("type");
 const search = document.getElementById("searchBar");
 const btn = document.getElementById("searchBtn");
 
+
 const getWeather = async() => {
     const url = `https://api.weatherapi.com/v1/current.json?key=ee64d5110b2f4b06829130230232606&q=${search.value}`;
     const get = await fetch(url);
@@ -25,12 +26,8 @@ const getDay = (number) => {
     return days[number];
 }
 
-btn.addEventListener("click",getWeather);
-search.addEventListener("keypress",(e)=>{
-    if(e.key === 'Enter'){
-        getWeather();
-    }
-});
 search.value = "New Delhi";
 getWeather();
 search.value = "";
+
+btn.addEventListener("click",getWeather);
