@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     /* border: solid black 2px; */
     /* margin: 10px; */
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 600;
+    color: white;
+    border: none;
 }
 
 html,body{
@@ -14,6 +20,7 @@ body{
     background-image: url(./cool-background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 1.2rem;
 }
 
 .box{
@@ -22,6 +29,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.blur{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.436);
 }
 
 .box div{
@@ -39,14 +53,32 @@ body{
 
 .search form{
     width: 90%;
+    height: 50%;
     display: flex;
     justify-content: center;
 }
 
 #searchBar{
     flex-grow: 9;
+    outline: none;
+    font-weight: 400;
+    font-size: 1.1rem;
+    border-radius: 20px 0 0 20px;
+    padding-left: 20px;
+    background-color: white;
+    color: rgb(43,43,43);
 }
 
 #searchBtn{
     flex-grow: 1;
+    border-radius: 0 20px 20px 0;
+    background-color: lightblue;
+    transition: all 0.5s;
+    color: rgb(43, 43, 43);
+}
+
+#searchBtn:hover{
+    cursor: pointer;
+    background-color: rgb(5, 174, 231);
+    color: white;
 }
