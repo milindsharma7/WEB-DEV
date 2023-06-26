@@ -27,7 +27,6 @@ const getDay = (number) => {
 
 btn.addEventListener("click",getWeather);
 search.addEventListener("keypress",(e)=>{
-    e.preventDefault();
     if(e.key === 'Enter'){
         getWeather();
     }
