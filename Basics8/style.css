@@ -1,11 +1,24 @@
 *{
     margin: 0px;
     padding: 0px;
+    /* border: solid black 2px; */
+    /* margin: 10px; */
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url(./cool-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .box{
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,4 +26,27 @@
 
 .box div{
     padding: 10px;
+    margin: 10px;
+}
+
+.search{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.search form{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+#searchBar{
+    flex-grow: 9;
+}
+
+#searchBtn{
+    flex-grow: 1;
 }
