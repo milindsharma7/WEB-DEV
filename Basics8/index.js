@@ -17,6 +17,7 @@ const getWeather = async() => {
     day.innerText = getDay(new Date(time).getDay());
     photo.src = data.current.condition.icon;
     type.innerText = data.current.condition.text;
+    search.value = "";
 }   
 
 const getDay = (number) => {
@@ -25,3 +26,12 @@ const getDay = (number) => {
 }
 
 btn.addEventListener("click",getWeather);
+search.addEventListener("keypress",(e)=>{
+    e.preventDefault();
+    if(e.key === 'Enter'){
+        getWeather();
+    }
+});
+search.value = "New Delhi";
+getWeather();
+search.value = "";

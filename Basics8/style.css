@@ -3,8 +3,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    /* border: solid black 2px; */
-    /* margin: 10px; */
     font-family: 'Belanosima', sans-serif;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.87);
@@ -39,8 +37,8 @@ body{
 }
 
 .box div{
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
 }
 
 .search{
@@ -81,4 +79,18 @@ body{
     cursor: pointer;
     background-color: rgb(5, 174, 231);
     color: white;
+}
+
+#type{
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+#temp,#location,#day{
+    font-size: 1.5rem;
 }
